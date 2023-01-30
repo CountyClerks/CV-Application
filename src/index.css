@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* body {
+} */
+
+header {
+    display: flex;
+    background-color: #242D34;
+    padding: 25px;
+    color: #EDE1CC;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
