@@ -2,14 +2,43 @@
     box-sizing: border-box;
     margin: 0;
 }
-
 body {
     background-color: #544D48;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-header {
+header, main, .form-container, form, .resume {
     display: flex;
+}
+.job--title, .job--info, .university--title, .university--info, .contact--info, .contact--name {
+    display: inherit;
+}
+.form-container, form, .resume, .contact--name {
+    flex-direction: column;
+}
+.education--title, .experience--title, .description--title, .description--list {
+    margin-left: 25px;
+}
+.job--title, .job--info, .university--info, .university--title {
+    margin-left: 30px;
+}
+.job--title, .job--info, .university--title, .university--info, .contact--info {
+    padding: 10px;
+}
+.job--title, .job--info, .university--title, .university--info {
+    justify-content: space-between;
+    align-items: center;
+}
+.education--title, .experience--title, .description--title {
+    margin-right: 25px;
+    border-bottom: 1px solid grey;
+}
+.description--info, .description--list {
+    margin-bottom: 25px;
+}
+.job--title, .job--info {
+    font-size: 0.75rem;
+}
+header {
     background-color: #242D34;
     padding: 25px;
     color: #EDE1CC;
@@ -17,16 +46,11 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 main {
-    display: flex;
     justify-content: center;
     column-gap: 25px;
 }
-
 .form-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -36,41 +60,59 @@ main {
     width: 500px;
     box-shadow: rgb(0 0 0 / 35%) 0px 3px 12px;
 }
-
 form {
-    display: flex;
-    flex-direction: column;
     row-gap: 20px;
     align-items: center;
 }
-
-
 .form--input {
     width: 400px;
     border-radius: 4px;
     border: 1px solid black;
     text-indent: 3px;
     padding: 5px;
-    font-size: 16px;
+    font-size: 1rem;
 }
-
 textarea {
     height: 70px;
+    resize: vertical;
 }
-
 .resume {
     background-color: white;
     margin-top: 50px;
     width: 850px;
-    display: flex;
-    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 35%) 0px 3px 12px;
+    height: 1000px;
 }
-
 .contact--name {
-    display: inherit;
-    justify-content: center;
+    row-gap: 15px;
+    background-color: #9F9884;
+    padding: 30px 0 0 30px;
+    height: 150px;
 }
-
-.university--title, .university--info {
-    display: inherit;
+.contact--position {
+    font-size: 1.25rem;
+}
+.contact--info {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.description--list {
+    margin-top: 5px;
+    width: 425px;
+}
+.job--info {
+    font-style: italic;
+}
+.university--info {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+.university--title,  .job--title {
+    font-size: 0.75rem;
+}
+.education--title {
+    margin-top: 15px;
+}
+.experience--title {
+    margin-top: -10px;
 }

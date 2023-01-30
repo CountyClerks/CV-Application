@@ -1,4 +1,5 @@
 import React from 'react'
+import RenderCV from './Render-CV'
 import Render from './Render-CV'
 export default function Form() {
     const [contactData, setContactInfo] = React.useState({
@@ -76,6 +77,8 @@ export default function Form() {
                         onChange={handleChange}
                     />
                     <textarea 
+                        cols="30"
+                        rows="15"
                         type="text" 
                         placeholder="About me..."
                         name="description"
@@ -175,29 +178,7 @@ export default function Form() {
                     />
                 </form>
             </div>
-            <div className="resume">
-                <div className="contact--name">
-                    <h1>{contactData.firstName} {contactData.lastName}</h1>
-                </div>
-                <h2>{contactData.position}</h2>
-                <h2>{contactData.email}</h2>
-                <h1>{contactData.phoneNumber}</h1>
-                <p>{contactData.description}</p>
-                <h1>{contactData.jobTitle}</h1>
-                <h2>{contactData.company}</h2>
-                <h2>{contactData.jobLocation}</h2>
-                <h2>{contactData.startYear}</h2>
-                <h2>{contactData.endYear}</h2>
-                <div className="university--title">
-                    <h1>{contactData.university}</h1>
-                    <h2>{contactData.universityLocation}</h2>
-                </div>
-                <div className="university--info">
-                    <h2>{contactData.degree} in {contactData.major}</h2>
-                    <h2>{contactData.degreeStartYear}</h2>
-                    <h2>{contactData.degreeEndYear}</h2>
-                </div>
-            </div>
+            <Render contactData={contactData}/>
         </main>
     )
 }
