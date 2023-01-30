@@ -5,6 +5,7 @@
 
 body {
     background-color: #544D48;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -43,9 +44,6 @@ form {
     align-items: center;
 }
 
-form > input {
-
-}
 
 .form--input {
     width: 400px;
@@ -58,4 +56,21 @@ form > input {
 
 textarea {
     height: 70px;
+}
+
+.resume {
+    background-color: white;
+    margin-top: 50px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact--name {
+    display: inherit;
+    justify-content: center;
+}
+
+.university--title, .university--info {
+    display: inherit;
 }
