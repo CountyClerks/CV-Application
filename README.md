@@ -4,5 +4,6 @@ I created this application to to test and practice my knowledge of props and sta
 
 ## WIP
 Next features will be rendering the resume section into a printable or savable PDF file for use.
+Responsive layout for different screen sizes.
 
 Live: https://countyclerks.github.io/CV-Application/
